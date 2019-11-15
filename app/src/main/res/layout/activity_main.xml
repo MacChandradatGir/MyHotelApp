@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+ <ImageView
+     android:id="@+id/hotel_imageView"
+     android:layout_width="112dp"
+     android:layout_height="82dp"
+     android:layout_marginTop="36dp"
+     android:src="@drawable/ic_home_gold_24dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+
+   <EditText
+       android:id="@+id/name_editView"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="36dp"
+       android:hint="Enter Guest Name"
+       android:inputType="textPersonName"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/hotel_imageView"/>
+
+    <EditText
+        android:id="@+id/room_editView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Room Number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_editView"/>
+
+    <EditText
+        android:id="@+id/date_editView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Date"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_editView"/>
+
+    <EditText
+        android:id="@+id/price_editView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_editView"/>
+
+ <!--<TextView
+  android:id="@+id/user_textView"
+  android:layout_width="402dp"
+  android:layout_height="127dp"
+  android:layout_margin="16dp"
+  android:text="TextView"
+  app:layout_constraintBottom_toBottomOf="parent"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintBottom_toTopOf="@+id/addButton" />
+-->
+ <Button
+     android:id="@+id/addButton"
+     android:layout_width="150dp"
+     android:layout_height="50dp"
+     android:layout_marginTop="52dp"
+     android:text="Add Guest"
+     app:layout_constraintEnd_toStartOf="@+id/viewButton"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/price_editView" />
+
+ <Button
+     android:id="@+id/viewButton"
+     android:layout_width="150dp"
+     android:layout_height="50dp"
+     android:layout_marginTop="52dp"
+     android:text="View Guest List"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toEndOf="@+id/addButton"
+     app:layout_constraintTop_toBottomOf="@+id/price_editView"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
